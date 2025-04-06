@@ -1,5 +1,5 @@
 # sol_i_web
-![python check](https://github.com/AlanSilvaaa/sol_i_web/actions/workflows/python_tests.yml/badge.svg)
+![python check](https://github.com/AlanSilvaaa/sol_i_web/actions/workflows/pythons_tests.yml/badge.svg)
 ![linter check](https://github.com/AlanSilvaaa/sol_i_web/actions/workflows/linter.yml/badge.svg)
 ![docker check](https://github.com/AlanSilvaaa/sol_i_web/actions/workflows/docker_push.yml/badge.svg)
 
