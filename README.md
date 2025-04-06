@@ -12,55 +12,62 @@ This project is dockerized. You can run it using Docker. Make sure you have Dock
 
 You can run it by building the image and then running the container, or you can pull the image from Docker Hub and run it directly.
 #### By pull
-Make sure that you got configured you SSH key in your linux system  
 ```bash
 docker pull teg57/sol_i_web
 ```
+
 ```bash
 docker run --rm -p 8000:8000 sol_i_web
 ```
 #### By build
-Clone the repository to your local machine and then build the image using the following command:  
+Clone the repository to your local machine and then build the image using the following commands:  
 ```bash
 docker build -t sol_i_web .
 ```
 
-### Run
 ```bash
 docker run --rm -p 8000:8000 sol_i_web
 ```
 
-### Uvicorn way
-Make sure that you have a python version equal or above 3.12
-Clone the repository:  
+### Run locally
+Make sure that you have a python version greater or equal to 3.12. Then:
+
+Clone the repository:
 ```bash
 git clone https://github.com/AlanSilvaaa/sol_i_web.git
 ```
+
 Run the next command to install poetry:  
 ```bash
 pip install poetry
 ```
-Run this command to create poetry enviroment:
+
+Install depencencies along with a poetry enviroment:
 ```bash
 poetry install --no-root
 ```
+
 Finally run this command to run the source code:
 ```bash
 poetry run uvicorn main:app --port 8000
 ```
-This going to run the local server to display the app, so you have to go to the next endpoint, copy into your favorite browser:
+
+### Test API
+There are two ways to test the API, using a browser or using curl.
+#### Browser
+After the local server is started, go to your browser and type the following URL:
 ```bash
 127.0.0.1:8000/time
 ```
-#### Curl in you want
-To visualize the result of the local server you could try to use Curl, run this command:
+#### Curl
+To visualize the result of the local server you can use Curl:
 ```bash
 curl http://127.0.0.1:8000/time
 ```
-If you local server is running alright, this must return somethin like:  
+If you local server is running fine, it should return something like:
 ```bash
 {"Date and time": "2025-04-06 12:34:56"}
 ```
 
 ### Docker Hub link
-https://hub.docker.com/r/teg57/sol_i_web 
+[Here](https://hub.docker.com/r/teg57/sol_i_web) you can find the docker image on Docker Hub.
