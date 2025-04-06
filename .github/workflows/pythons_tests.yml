@@ -1,0 +1,18 @@
+name: Python CI
+on: [push]
+jobs:
+    build:
+        runs-on: ${{ matrix.os }}
+        strategy:
+            matrix:
+                os: [ubuntu-latest, windows-latest]
+                python-version: [3.9, 3.12]
+        steps:
+            - uses: actions/checkout@v2
+            - uses: actions/setup-python@v2
+              with:
+                python-version: ${{ matrix.python-version }}
+            - run: pip install poetry
+            - run: poetry config virtualenvs.create false
+            - run: poetry install
+            - run: cd tests && poetry run pytest
