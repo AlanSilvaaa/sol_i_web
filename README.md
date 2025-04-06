@@ -1,7 +1,7 @@
 # sol_i_web
-![python check](https://github.com/Vinbu/Web_Application_Taller_2/actions/workflows/python_tests.yml/badge.svg)
-![linter check](https://github.com/Vinbu/Web_Application_Taller_2/actions/workflows/linter.yml/badge.svg)
-![docker check](https://github.com/Vinbu/Web_Application_Taller_2/actions/workflows/docker_push.yml/badge.svg)
+![python check](https://github.com/AlanSilvaaa/sol_i_web/actions/workflows/python_tests.yml/badge.svg)
+![linter check](https://github.com/AlanSilvaaa/sol_i_web/actions/workflows/linter.yml/badge.svg)
+![docker check](https://github.com/AlanSilvaaa/sol_i_web/actions/workflows/docker_push.yml/badge.svg)
 
 Python app that returns the current time using fastAPI
 
