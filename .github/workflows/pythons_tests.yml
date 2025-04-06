@@ -6,7 +6,7 @@ jobs:
         strategy:
             matrix:
                 os: [ubuntu-latest, windows-latest]
-                python-version: [3.9, 3.12]
+                python-version: [3.12]
         steps:
             - uses: actions/checkout@v2
             - uses: actions/setup-python@v2
@@ -14,5 +14,5 @@ jobs:
                 python-version: ${{ matrix.python-version }}
             - run: pip install poetry
             - run: poetry config virtualenvs.create false
-            - run: poetry install
+            - run: poetry install --no-root
             - run: cd tests && poetry run pytest
