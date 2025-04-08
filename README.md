@@ -1,4 +1,4 @@
-# sol_i_web
+# sol_i_web: Current time with fastAPI
 ![python check](https://github.com/AlanSilvaaa/sol_i_web/actions/workflows/pythons_tests.yml/badge.svg)
 ![linter check](https://github.com/AlanSilvaaa/sol_i_web/actions/workflows/linter.yml/badge.svg)
 ![docker check](https://github.com/AlanSilvaaa/sol_i_web/actions/workflows/docker_push.yml/badge.svg)
