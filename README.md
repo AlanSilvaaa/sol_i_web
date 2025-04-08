@@ -47,7 +47,7 @@ Install depencencies along with a poetry enviroment:
 poetry install --no-root
 ```
 
-Finally run this command to run the source code:
+Finally go to `src` folder and run this command to run the source code:
 ```bash
 poetry run uvicorn main:app --port 8000
 ```
